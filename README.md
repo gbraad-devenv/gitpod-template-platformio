@@ -1,2 +1,4 @@
-# gitpod-template-platformio
+GitPod Template PlatformIO
+==========================
+
 GitPod template running PlatformIO
