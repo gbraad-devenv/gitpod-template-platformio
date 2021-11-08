@@ -2,3 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 experimentalNetwork: true
+
+vscode:
+  extensions:
+    - platformio.platformio-ide
