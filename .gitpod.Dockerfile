@@ -10,9 +10,12 @@ ENV PIP_USER=false
 ENV PLATFORMIO_PENV_DIR=/home/gitpod/.platformio
 ENV PATH="${PLATFORMIO_PENV_DIR}/bin:${PATH}"
 RUN python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
+RUN chown -R gitpod.gitpod /home/gitpod/.platformio
 
 # Install user environment
 CMD /bin/bash -l
 USER gitpod
 ENV USER gitpod
 WORKDIR /home/gitpod
+
+
